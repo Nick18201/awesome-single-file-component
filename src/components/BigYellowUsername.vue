@@ -1,15 +1,21 @@
 <template>
-  <div>
-    <p class= "username"></p>
-  </div>
+  <p class="username">{{ username }}</p>
 </template>
 
 <script>
 export default {
-
+  props: {
+    username: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.username {
+  font-size: 3rem;
+  color: #dcae1d;
+}
 </style>
